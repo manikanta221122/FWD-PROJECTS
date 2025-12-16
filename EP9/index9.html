@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer - Async API Calls</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+    <header>
+        <h1>🌍 Travel Explorer</h1>
+        <p>Discover amazing destinations with live data</p>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="text" id="cityInput" placeholder="Enter city name (e.g., Paris, Tokyo)" value="Paris">
+            <button id="searchBtn">Explore Destination</button>
+        </section>
+
+        <section class="loading-section" id="loadingSection">
+            <div class="spinner"></div>
+            <p>Loading travel data...</p>
+        </section>
+
+        <section class="content-section" id="contentSection">
+            <div class="city-card">
+                <h3>Paris, France</h3>
+                <div class="city-info">
+                    <span class="icon">📍</span>
+                    <div>
+                        <p><strong>Coordinates:</strong> 48.8566°N, 2.3522°E</p>
+                        <p><strong>Region:</strong> Île-de-France</p>
+                    </div>
+                </div>
+            </div>
+            <div class="city-card">
+                <h3>🌡 Weather Overview</h3>
+                <p><strong>Current:</strong> 15°C</p>
+                <p><strong>Condition:</strong> Clouds</p>
+                <p><strong>Humidity:</strong> 65%</p>
+            </div>
+            <div class="city-card">
+                <h3>🏛 Top Attractions</h3>
+                <p>⭐ Eiffel Tower (4.7/5)</p>
+                <p>⭐ Louvre Museum (4.6/5)</p>
+                <p>⭐ Notre-Dame (4.5/5)</p>
+            </div>
+        </section>
+
+        <section class="weather-section" id="weatherSection">
+            <h2>🌤 Current Weather</h2>
+            <div id="weatherContent">
+                <div class="weather-icon">☁</div>
+                <div class="temperature">15°C</div>
+                <p>overcast clouds</p>
+                <p>Feels like 14°C</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
